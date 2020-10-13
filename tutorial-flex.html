@@ -1,212 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alef&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo-flex.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="estilo-flex.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <div class="contenidoweb">
+      <header>
+        <div class="titulo">
+          <h1>Propiedad Flex</h1>
+        </div>
+      </header>
 
-<body>
-  <div class="contenidoweb">
-    <header>
-      <div class="titulo">
-        <h1>Propiedad Flex</h1>
+      <div class="box-content">
+        <div class="column menu">
+          <ul>
+            <li>Por defecto</li>
+            <li>Alineado derecha</li>
+            <li>Vertical hacia la izquieda</li>
+            <li>Para Dejarlos Vertical Y Centro</li>
+            <li>Para Dejarlos Vertical Y Derecha</li>
+            <li>Centrado En El Recuadro</li>
+            <li>Horizontal Centro Arriba</li>
+            <li>Horizontal Centro Abajo</li>
+            <li>Diagonal Inferior Izquierda</li>
+            <li>Diagonal Superior Derecha</li>
+            <li>Diagonal Inferior Derecha</li>
+            <li>Elementos - Space Space-Between</li>
+            <li>Elementos - Space Space-Around</li>
+            <li>Elementos Verticales - Space Around</li>
+            <li>Elementos Verticales - Space-Between</li>
+          </ul>
+        </div>
+
+        <div class="column content">
+          <section>
+            <h2>Por defecto</h2>
+            <p>Alinea los elementos a la izquierda display: flex</p>
+            <div class="flex-container-a">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Para centrar elementos</h2>
+            <p>Propiedad justify-content: center</p>
+            <div class="flex-container-b">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Alineado derecha</h2>
+            <p>Propiedad justify-content: flex-end</p>
+            <div class="flex-container-c">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Vertical hacia la izquieda</h2>
+            <p>
+              Propiedad flex-direction: column por defecto es row (horizontal)
+            </p>
+            <div class="flex-container-d">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Para dejarlos vertical y centro</h2>
+            <p>Propiedad flex-direction: column align-items: center</p>
+            <div class="flex-container-e">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Para dejarlos vertical y derecha</h2>
+            <p>Propiedad flex-direction: column align-items: flex-end;</p>
+            <div class="flex-container-f">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Centrado en el recuadro</h2>
+            <p>Propiedad align-items: center justify-content: center</p>
+            <div class="flex-container-g">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Horizontal centro arriba</h2>
+            <p>Propiedad align-items: flex-start justify-content: center</p>
+            <div class="flex-container-h">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Horizontal centro abajo</h2>
+            <p>Propiedad align-items: flex-start justify-content: center</p>
+            <div class="flex-container-i">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Diagonal inferior izquierda</h2>
+            <p>Propiedad align-items: flex-end justify-content: flex-start</p>
+            <div class="flex-container-j">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Diagonal superior derecha</h2>
+            <p>Propiedad align-items: flex-start justify-content: center</p>
+            <div class="flex-container-k">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Diagonal inferior derecha</h2>
+            <p>Propiedad align-items: flex-end justify-content: flex-end</p>
+            <div class="flex-container-l">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Elementos - Space space-between</h2>
+            <p>Propiedad justify-content: space-between;</p>
+            <div class="flex-container-m">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Elementos - Space space-around</h2>
+            <p>Propiedad justify-content: space-around</p>
+            <div class="flex-container-n">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Elementos verticales - Space Around</h2>
+            <p>Propiedad justify-content: space-around;</p>
+            <div class="flex-container-o">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Elementos verticales - space-between</h2>
+            <p>Propiedad justify-content: space-around;</p>
+            <div class="flex-container-p">
+              <div class="bloque">1</div>
+              <div class="bloque">2</div>
+              <div class="bloque">3</div>
+            </div>
+          </section>
+        </div>
       </div>
-    </header>
 
-    <div class="box-content">
-      <div class="column menu">
-        <ul>
-          <li>Por defecto</li>
-          <li>Alineado derecha</li>
-          <li>Vertical hacia la izquieda</li>
-          <li>Para Dejarlos Vertical Y Centro</li>
-          <li>Para Dejarlos Vertical Y Derecha</li>
-          <li>Centrado En El Recuadro</li>
-          <li>Horizontal Centro Arriba</li>
-          <li>Horizontal Centro Abajo</li>
-          <li>Diagonal Inferior Izquierda</li>
-          <li>Diagonal Superior Derecha</li>
-          <li>Diagonal Inferior Derecha</li>
-          <li>Elementos - Space Space-Between</li>
-          <li>Elementos - Space Space-Around</li>
-          <li>Elementos Verticales - Space Around</li>
-          <li>Elementos Verticales - Space-Between</li>
-        </ul>
-      </div>
-
-      <div class="column content">
-        <section>
-          <h2>Por defecto</h2>
-          <p>Alinea los elementos a la izquierda display: flex</p>
-          <div class="flex-container-a">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Para centrar elementos</h2>
-          <p>Propiedad justify-content: center</p>
-          <div class="flex-container-b">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Alineado derecha</h2>
-          <p>Propiedad justify-content: flex-end</p>
-          <div class="flex-container-c">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Vertical hacia la izquieda</h2>
-          <p>Propiedad flex-direction: column por defecto es row (horizontal)</p>
-          <div class="flex-container-d">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Para dejarlos vertical y centro</h2>
-          <p>Propiedad flex-direction: column align-items: center</p>
-          <div class="flex-container-e">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Para dejarlos vertical y derecha</h2>
-          <p>Propiedad flex-direction: column align-items: flex-end;</p>
-          <div class="flex-container-f">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Centrado en el recuadro</h2>
-          <p>Propiedad align-items: center justify-content: center</p>
-          <div class="flex-container-g">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Horizontal centro arriba</h2>
-          <p>Propiedad align-items: flex-start justify-content: center</p>
-          <div class="flex-container-h">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Horizontal centro abajo</h2>
-          <p>Propiedad align-items: flex-start justify-content: center</p>
-          <div class="flex-container-i">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Diagonal inferior izquierda</h2>
-          <p>Propiedad align-items: flex-end justify-content: flex-start</p>
-          <div class="flex-container-j">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Diagonal superior derecha</h2>
-          <p>Propiedad align-items: flex-start justify-content: center</p>
-          <div class="flex-container-k">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Diagonal inferior derecha</h2>
-          <p>Propiedad align-items: flex-end justify-content: flex-end</p>
-          <div class="flex-container-l">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Elementos - Space space-between</h2>
-          <p>Propiedad justify-content: space-between;</p>
-          <div class="flex-container-m">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Elementos - Space space-around</h2>
-          <p>Propiedad justify-content: space-around</p>
-          <div class="flex-container-n">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Elementos verticales - Space Around</h2>
-          <p>Propiedad justify-content: space-around;</p>
-          <div class="flex-container-o">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Elementos verticales - space-between</h2>
-          <p>Propiedad justify-content: space-around;</p>
-          <div class="flex-container-p">
-            <div class="bloque">1</div>
-            <div class="bloque">2</div>
-            <div class="bloque">3</div>
-          </div>
-        </section>
-      </div>
+      <footer>
+        <div class="flechas">
+          <div class="arrow left"><a href="#">Atras</a></div>
+          <div class="arrow home"><a href="#">Inicio</a></div>
+          <div class="arrow right"><a href="#">Siguente</a></div>
+        </div>
+        <div class="titulo">
+          <h3>By Kannder83</h3>
+        </div>
+      </footer>
     </div>
-
-    <footer>
-      <div class="titulo">
-        <h3>By Kannder83</h3>
-      </div>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>
